@@ -1,0 +1,28 @@
+{
+  "name": "cicd-jenkins",
+  "version": "1.0.0",
+  "description": "CI/CD with jenkins and Digitalocean",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tutugodfrey/cicd-jenkins.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tutugodfrey/cicd-jenkins/issues"
+  },
+  "homepage": "https://github.com/tutugodfrey/cicd-jenkins#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "mocha": "^6.1.4",
+    "should": "^13.2.3",
+    "supertest": "^4.0.2"
+  }
+}
