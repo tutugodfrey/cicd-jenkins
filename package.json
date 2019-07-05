@@ -4,7 +4,7 @@
   "description": "CI/CD with jenkins and Digitalocean",
   "main": "index.js",
   "scripts": {
-    "test": "mocha ./app.js"
+    "test": "mocha ./app.js --exit"
   },
   "repository": {
     "type": "git",
