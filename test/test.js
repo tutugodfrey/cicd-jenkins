@@ -1,9 +1,10 @@
 var supertest = require("supertest");
 var should = require("should");
+var app = require('../app');
 
 // This agent refers to PORT where the program is running.
 
-var server = supertest.agent("http://localhost:4000");
+// var server = supertest.agent("http://localhost:4000");
 
 // UNIT test begin
 
@@ -12,7 +13,7 @@ describe("SAMPLE unit test",function(){
   // #1 should return home page
   it("should return home page",function(done){
     // calling home page
-    server
+    supertest(app)
     .get("/")
     .expect("Content-type",/text/)
     .expect(200) // THis is HTTP response
