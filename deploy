@@ -1,0 +1,8 @@
+-#!/bin/sh      
+ssh root@169.239.188.14 <<EOF        
+ cd / 
+ git pull       
+ npm install --production       
+ pm2 restart all
+ exit       
+EOF
