@@ -20,6 +20,7 @@ describe("SAMPLE unit test",function(){
     .end(function(err,res){
       // HTTP status should be 200
       res.status.should.equal(200);
+      res.body.message.should.equal('Hello World! Jenkins is integrated!')
       done();
     });
   });
