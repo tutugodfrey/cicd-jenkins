@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# pc pipeline container
+
+CONTAINER=cicd-jenkins-pc
+RUNNING=$(docker inspect --format="{{.State.Running }}" $CONTAINER 2> /dev/null)
+
+if [ $? -eq 1 ]; then
+	echo "'$CONTAINER' deos not exist."
+else
+	docker rm -f $CONTAINER
+fi
+
+    # run the container
+    echo ""
+    echo "Starting container $CONTAINER"
+    docker run -d -p 4001:4000 --name cicd-jenkins-pc tutug/cicd-jenkins-image:latest

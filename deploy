@@ -1,4 +1,4 @@
--#!/bin/sh      
+#!/bin/sh      
 ssh root@169.239.188.14 <<EOF        
  cd / 
  git pull       

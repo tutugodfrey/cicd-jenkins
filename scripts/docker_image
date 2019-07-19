@@ -1,0 +1,6 @@
+#!/bin/bash
+
+echo "Building docker image for "
+
+docker build -t tutug/cicd-jenkins-image:latest .
+docker push tutug/cicd-jenkins-image:latest
